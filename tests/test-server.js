@@ -94,7 +94,7 @@ export class PageRequest {
     for(let i = 0; i < this.size; i++){
       records.push({
         id: i,
-        name: `Record ${this.offset * this.size + i}`
+        name: `#${this.offset * this.size + i}`
       });
     }
     this._resolve(records);

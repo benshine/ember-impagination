@@ -12,7 +12,9 @@
   <div class="demo_records-wrapper">
     <div class="demo_records-list-container">
       {{#each records as |record index|}}
-        <div class="demo_record" style={{color-block record.content.hsl}}>Record {{index}}</div>
+        <div class="demo_record" style={{color-block record.content.hsl}}>
+          #{{index}}
+        </div>
       {{/each}}
     </div>
   </div>

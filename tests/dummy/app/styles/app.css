@@ -18,12 +18,12 @@
   color: #303030;
   font-family: Arial;
   box-sizing: border-box;
-  border: 1px solid #303030;
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
   vertical-align: middle;
   background-color: white;
   border-radius: 5px;
+  margin: 1px;
 }
 
 .demo_dataset-wrapper {

@@ -1,7 +1,7 @@
 {{#impagination-dataset fetch=fetch page-size=pageSize as |records|}}
 
   {{#each records as |record index|}}
-    {{#color-block record.content.hsl}} Record {{index}} {{/color-block}}
+    {{#color-block record.content.hsl}} #{{index}} {{/color-block}}
   {{/each}}
 
   <button {{action records.setReadOffset records.length}}>Load More</button>
