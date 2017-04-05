@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import colorRamp from 'dummy/utils/color-ramp';
 
 const DEBUG = false;
 
@@ -45,8 +46,6 @@ class RGBSpectrum {
   }
 
   get colors() {
-    return new Array(this.colorCount).fill(0).map((nil, i)=> {
-      return {'hsl':`hsl(${this.step * i}, 100%, 50%)`};
-    });
+    return colorRamp(this.colorCount, this.step);
   }
 }
